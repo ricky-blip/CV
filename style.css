@@ -1,0 +1,20 @@
+html,body
+{
+    overflow-x: hidden;
+}
+
+.jumbotron
+{
+    padding-top: 5rem;
+    background-color: #fcf0e0;
+}
+
+#experience
+{
+    background-color: #fcf0e0;
+}
+
+section
+{
+    padding-top: 5rem;
+}
