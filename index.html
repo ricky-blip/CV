@@ -7,7 +7,7 @@
 
     <!-- Memanggil Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
 
@@ -145,7 +145,7 @@
                 -Matching customer data. <br />
                 -Help print JHT customers. <br />
               </p>
-              <a href="#" class="btn btn-dark border-light d-grid gap-2 " style="background-color: #fd7e14">View Certificate</a>
+              <a href="#" class="btn btn-dark border-light d-grid gap-2" style="background-color: #fd7e14">View Certificate</a>
             </div>
           </div>
         </div>
@@ -163,9 +163,7 @@
 
     <!-- Contact -->
     <section id="contact">
-
       <div class="container">
-
         <div class="row text-center mb-3">
           <div class="col">
             <h2>Contact Me</h2>
@@ -174,40 +172,87 @@
 
         <div class="row justify-content-center">
           <div class="col-md-8">
-            <form>
-
+            <form name="contact-form">
               <div class="mb-3">
                 <label for="name" class="form-label">Nama</label>
-                <input type="text" class="form-control border-warning" id="name" aria-describedby="name">
+                <input type="text" class="form-control border-warning" id="name" aria-describedby="name" placeholder="Type Your Name" name="nama" />
               </div>
 
               <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control border-warning" id="email" aria-describedby="email">
+                <input type="email" class="form-control border-warning" id="email" aria-describedby="email" placeholder="Type Your Email" name="email" />
               </div>
 
               <div class="mb-3">
                 <label for="pesan" class="form-label">Tulis Pesan Anda</label>
-                <textarea class="form-control border-warning" id="pesan" rows="3"></textarea>
+                <textarea class="form-control border-warning" id="pesan" rows="3" placeholder="Type Your Message" name="pesan"></textarea>
               </div>
-             
-              <button type="submit" class="btn text-uppercase btn-warning">Kirim</button>
+
+              <button type="submit" class="mb-3 btn text-uppercase btn-warning btn-kirim">Kirim</button>
+
+              <button class="mb-3 btn btn-warning btn-process d-none" type="button" disabled>
+                <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                Processing...
+              </button>
+
+              <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+                <strong>Pesan Telah Terkirim!</strong> Terima Kasih
+                <button type="button" class="btn-close btn-process" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
             </form>
           </div>
         </div>
-
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fd7e14" fill-opacity="1" d="M0,192L0,224L36.9,224L36.9,32L73.8,32L73.8,288L110.8,288L110.8,224L147.7,224L147.7,32L184.6,32L184.6,192L221.5,192L221.5,32L258.5,32L258.5,320L295.4,320L295.4,288L332.3,288L332.3,32L369.2,32L369.2,128L406.2,128L406.2,160L443.1,160L443.1,96L480,96L480,288L516.9,288L516.9,0L553.8,0L553.8,320L590.8,320L590.8,192L627.7,192L627.7,64L664.6,64L664.6,64L701.5,64L701.5,288L738.5,288L738.5,32L775.4,32L775.4,64L812.3,64L812.3,192L849.2,192L849.2,128L886.2,128L886.2,320L923.1,320L923.1,64L960,64L960,288L996.9,288L996.9,256L1033.8,256L1033.8,128L1070.8,128L1070.8,96L1107.7,96L1107.7,128L1144.6,128L1144.6,224L1181.5,224L1181.5,160L1218.5,160L1218.5,96L1255.4,96L1255.4,96L1292.3,96L1292.3,0L1329.2,0L1329.2,288L1366.2,288L1366.2,192L1403.1,192L1403.1,192L1440,192L1440,320L1403.1,320L1403.1,320L1366.2,320L1366.2,320L1329.2,320L1329.2,320L1292.3,320L1292.3,320L1255.4,320L1255.4,320L1218.5,320L1218.5,320L1181.5,320L1181.5,320L1144.6,320L1144.6,320L1107.7,320L1107.7,320L1070.8,320L1070.8,320L1033.8,320L1033.8,320L996.9,320L996.9,320L960,320L960,320L923.1,320L923.1,320L886.2,320L886.2,320L849.2,320L849.2,320L812.3,320L812.3,320L775.4,320L775.4,320L738.5,320L738.5,320L701.5,320L701.5,320L664.6,320L664.6,320L627.7,320L627.7,320L590.8,320L590.8,320L553.8,320L553.8,320L516.9,320L516.9,320L480,320L480,320L443.1,320L443.1,320L406.2,320L406.2,320L369.2,320L369.2,320L332.3,320L332.3,320L295.4,320L295.4,320L258.5,320L258.5,320L221.5,320L221.5,320L184.6,320L184.6,320L147.7,320L147.7,320L110.8,320L110.8,320L73.8,320L73.8,320L36.9,320L36.9,320L0,320L0,320Z"></path></svg>
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#fd7e14"
+          fill-opacity="1"
+          d="M0,192L0,224L36.9,224L36.9,32L73.8,32L73.8,288L110.8,288L110.8,224L147.7,224L147.7,32L184.6,32L184.6,192L221.5,192L221.5,32L258.5,32L258.5,320L295.4,320L295.4,288L332.3,288L332.3,32L369.2,32L369.2,128L406.2,128L406.2,160L443.1,160L443.1,96L480,96L480,288L516.9,288L516.9,0L553.8,0L553.8,320L590.8,320L590.8,192L627.7,192L627.7,64L664.6,64L664.6,64L701.5,64L701.5,288L738.5,288L738.5,32L775.4,32L775.4,64L812.3,64L812.3,192L849.2,192L849.2,128L886.2,128L886.2,320L923.1,320L923.1,64L960,64L960,288L996.9,288L996.9,256L1033.8,256L1033.8,128L1070.8,128L1070.8,96L1107.7,96L1107.7,128L1144.6,128L1144.6,224L1181.5,224L1181.5,160L1218.5,160L1218.5,96L1255.4,96L1255.4,96L1292.3,96L1292.3,0L1329.2,0L1329.2,288L1366.2,288L1366.2,192L1403.1,192L1403.1,192L1440,192L1440,320L1403.1,320L1403.1,320L1366.2,320L1366.2,320L1329.2,320L1329.2,320L1292.3,320L1292.3,320L1255.4,320L1255.4,320L1218.5,320L1218.5,320L1181.5,320L1181.5,320L1144.6,320L1144.6,320L1107.7,320L1107.7,320L1070.8,320L1070.8,320L1033.8,320L1033.8,320L996.9,320L996.9,320L960,320L960,320L923.1,320L923.1,320L886.2,320L886.2,320L849.2,320L849.2,320L812.3,320L812.3,320L775.4,320L775.4,320L738.5,320L738.5,320L701.5,320L701.5,320L664.6,320L664.6,320L627.7,320L627.7,320L590.8,320L590.8,320L553.8,320L553.8,320L516.9,320L516.9,320L480,320L480,320L443.1,320L443.1,320L406.2,320L406.2,320L369.2,320L369.2,320L332.3,320L332.3,320L295.4,320L295.4,320L258.5,320L258.5,320L221.5,320L221.5,320L184.6,320L184.6,320L147.7,320L147.7,320L110.8,320L110.8,320L73.8,320L73.8,320L36.9,320L36.9,320L0,320L0,320Z"
+        ></path>
+      </svg>
     </section>
     <!-- End Contact -->
 
     <!-- Footer -->
-    <footer class="text-center text-white pb-3 fs-5" style="background-color: #fd7e14;">
-      <p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="#" class="text-white fw-bold">Ricky Rinaldy</a> </p>
+    <footer class="text-center text-white pb-3 fs-5" style="background-color: #fd7e14">
+      <p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="#" class="text-white fw-bold">Ricky Rinaldy</a></p>
     </footer>
     <!-- End Footer -->
 
     <!-- Script default untuk bundle dari BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <!-- END Script default untuk bundle dari BOOTSTRAP -->
+
+    <!-- To GOOGLE SHEET -->
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzIZZYFGp_v5S7MvXAsXHr2oUu8LyTRYMaRzdheyYCM5cxKv6VNnJ3JSCt9oo7iI906/exec';
+      const form = document.forms['contact-form'];
+      const btnKirim = document.querySelector('.btn-kirim');
+      const btnProcess = document.querySelector('.btn-process');
+      const myAlert = document.querySelector('.my-alert');
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        // ketika tombol submit diklik
+        // tampilkan tombol process, hilangkan tombol kirim
+        btnProcess.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
+
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then((response) => {
+            // tampilkan tombol kirim, hilangkan tombol process
+            btnProcess.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            // tampilkan alert
+            myAlert.classList.toggle('d-none');
+            //reset form
+            form.reset();
+            console.log('Success!', response);
+          })
+          .catch((error) => console.error('Error!', error.message));
+      });
+    </script>
+    <!-- END To GOOGLE SHEET -->
   </body>
 </html>
