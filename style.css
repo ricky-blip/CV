@@ -1,6 +1,12 @@
 html,body
 {
-    overflow-x: hidden;
+    overflow-x: hidden; 
+    font-family: 'Poppins', sans-serif, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navbar-brand
+{
+    font-family: 'Press Start 2P';
 }
 
 .jumbotron
@@ -18,3 +24,9 @@ section
 {
     padding-top: 5rem;
 }
+
+.exp
+{
+    text-shadow: 0.5px 0.5px #FFA500;
+}
+
