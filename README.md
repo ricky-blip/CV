@@ -1,4 +1,4 @@
 # cv
 My Web
 
-LINK --->>> 
+LINK --->>> https://ricky-blip.github.io/cv/
